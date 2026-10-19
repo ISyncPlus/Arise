@@ -274,8 +274,8 @@ html:has(dialog[open]) { overflow: hidden; }
   .fleet-counter { font-size: 35px; }
   .fleet-counter small { font-size: 9px; }
   .meter-track { height: 40px; }
-  .fleet-reel { position: absolute; top: 27%; left: 0; right: 0; height: 44%; clip-path: inset(-32px -32px -35px); }
-  .fleet-card { width: min(52vw, 255px); height: min(42svh, 360px); min-height: 240px; }
+  .fleet-reel { position: absolute; top: 36%; left: 0; right: 0; height: 37%; clip-path: inset(-32px -32px -35px); }
+  .fleet-card { width: min(52vw, 255px); height: min(38svh, 320px); min-height: 240px; }
   .fleet-details { position: absolute; z-index: 20; bottom: 28px; left: var(--pad); right: var(--pad); max-width: none; background: var(--ink); box-shadow: 0 -28px 30px 7px var(--ink); }
   .fleet-details .eyebrow { margin-bottom: 4px; }
   .fleet-details-animated h3 { font-size: 53px; margin-bottom: 2px; }
