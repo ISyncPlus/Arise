@@ -58,7 +58,7 @@ em { color: var(--ice); font-style: normal; }
 .eyebrow span { color: var(--ice); }
 h1, h2, h3, h4, p { margin-top: 0; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: .94; letter-spacing: -.035em; }
-.pill { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 48px; padding: 0 22px; border: 1px solid var(--frost); border-radius: 50px; background: var(--frost); color: var(--ink); font-size: 13px; font-weight: 600; white-space: nowrap; transition: background .35s var(--ease), border-color .35s var(--ease), transform .35s var(--ease); }
+.pill { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 48px; padding: 0 22px; border: 1px solid var(--frost); border-radius: 50px; background: var(--frost); color: var(--ink); font-size: 13px; font-weight: 600; white-space: nowrap; transition: background .25s var(--ease), border-color .25s var(--ease), transform .25s var(--ease); }
 .pill:hover { background: var(--ice); border-color: var(--ice); transform: translateY(-2px); }
 .pill:disabled { opacity: .6; cursor: wait; }
 .text-link { min-height: 44px; display: inline-flex; align-items: center; gap: 30px; border: 0; border-bottom: 1px solid var(--ice); padding: 8px 0; background: none; color: var(--frost); font-size: 14px; }
@@ -93,7 +93,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: .94; lett
 .hero-lede { max-width: 325px; margin-bottom: 27px; color: var(--mist); line-height: 1.65; font-size: 15px; }
 .hero-bottom { position: absolute; z-index: 2; bottom: 34px; left: var(--pad); right: var(--pad); display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: end; min-height: 115px; pointer-events: none; }
 .hero-caption { max-width: 380px; min-height: 80px; }
-.hero-caption > div { animation: captionIn .55s var(--ease) both; }
+.hero-caption > div { animation: captionIn .25s var(--ease) both; }
 .caption-rule { display: block; width: 48px; height: 1px; margin-bottom: 12px; background: var(--ice); }
 .hero-caption .mono { color: var(--ice); margin-bottom: 5px; }
 .hero-caption p:last-child { margin: 0; color: var(--mist); font-size: 13px; line-height: 1.5; }
@@ -103,7 +103,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: .94; lett
 .progress-lines span { display: block; width: 28px; height: 2px; background: var(--line); }
 .progress-lines .filled { background: var(--ice); }
 .hero-loader { position: absolute; z-index: 95; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; background: var(--ink); animation: loaderIn .2s both; }
-.hero-loader.is-ready { opacity: 0; transition: opacity .9s var(--ease); pointer-events: none; }
+.hero-loader.is-ready { opacity: 0; transition: opacity .25s var(--ease); pointer-events: none; }
 .loader-brand { font: 400 64px/1 var(--serif); }
 .loader-track { width: 260px; height: 1px; background: var(--line); }
 .loader-track > span { display: block; height: 1px; background: var(--ice); transition: width .2s; }
@@ -125,9 +125,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: .94; lett
 .fleet-reel { position: relative; height: 100%; perspective: 1000px; }
 .fleet-card { position: absolute; top: 50%; left: 50%; translate: -50% -50%; width: min(26vw, 380px); height: min(64svh, 520px); min-height: 300px; aspect-ratio: 4/5; padding: 0; border: 0; border-radius: 12px; background: #05070a; text-align: left; }
 .fleet-card-dim { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: #000; opacity: var(--dim,0); }
-.fleet-card-inner { position: relative; display: block; width: 100%; height: 100%; border-radius: inherit; overflow: hidden; transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)); transition: transform .55s var(--ease), translate .55s var(--ease); }
+.fleet-card-inner { position: relative; display: block; width: 100%; height: 100%; border-radius: inherit; overflow: hidden; transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)); transition: transform .25s var(--ease), translate .25s var(--ease); }
 .fleet-card:hover .fleet-card-inner { translate: 0 -18px; }
-.fleet-card-inner::after { content: ''; position: absolute; inset: 0; border: 1px solid transparent; border-radius: inherit; pointer-events: none; background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(182,216,242,.8), transparent 45%) border-box; mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); mask-composite: exclude; opacity: 0; transition: opacity .3s; }
+.fleet-card-inner::after { content: ''; position: absolute; inset: 0; border: 1px solid transparent; border-radius: inherit; pointer-events: none; background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(182,216,242,.8), transparent 45%) border-box; mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); mask-composite: exclude; opacity: 0; transition: opacity .25s; }
 .fleet-card:hover .fleet-card-inner::after { opacity: 1; }
 .fleet-card video, .dialog-media > video, .ownership-card video { width: 100%; height: 100%; }
 .fleet-card-shade, .ownership-card-shade { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,.65), transparent 35%); }
@@ -135,7 +135,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: .94; lett
 .fleet-details { align-self: center; max-width: 340px; }
 .fleet-details-animated > * { overflow: hidden; }
 .fleet-details-animated h3 { margin-bottom: 12px; font-size: clamp(56px, 6vw, 96px); }
-.fleet-details-animated h3 span, .fleet-details-animated .fleet-finish span, .fleet-details-animated .fleet-description span { display: inline-block; animation: reveal .7s var(--ease) both; }
+.fleet-details-animated h3 span, .fleet-details-animated .fleet-finish span, .fleet-details-animated .fleet-description span { display: inline-block; animation: reveal .25s var(--ease) both; }
 .fleet-finish { color: var(--ice); margin-bottom: 27px; }
 .fleet-description { color: var(--mist); font-size: 15px; line-height: 1.7; }
 .fleet-details .text-link { margin-top: 15px; }
@@ -177,14 +177,14 @@ html:has(dialog[open]) { overflow: hidden; }
 /* Ownership */
 .ownership-section { position: relative; min-height: 100svh; display: grid; grid-template-columns: minmax(0,.37fr) minmax(0,.63fr); align-items: center; gap: 4vw; padding: 130px var(--pad); overflow: hidden; background: var(--ink); }
 .ownership-copy { position: relative; z-index: 5; }
-.ownership-copy h2 { min-height: 2.75em; margin: 35px 0 20px; font-size: clamp(56px, 6.5vw, 98px); animation: captionIn .55s var(--ease); }
+.ownership-copy h2 { min-height: 2.75em; margin: 35px 0 20px; font-size: clamp(56px, 6.5vw, 98px); animation: captionIn .25s var(--ease); }
 .ownership-description { max-width: 360px; color: var(--mist); line-height: 1.7; margin-bottom: 32px; }
 .ownership-controls { display: flex; align-items: center; gap: 25px; margin-top: 65px; }
 .ownership-controls button { width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--frost); font-size: 22px; transition: background .25s, border-color .25s; }
 .ownership-controls button:hover { background: var(--ice); border-color: var(--ice); color: var(--ink); }
 .ownership-controls span { color: var(--mist); }
 .ownership-arc { position: relative; height: min(64svh, 650px); perspective: 1300px; transform-style: preserve-3d; touch-action: pan-y; }
-.ownership-card { position: absolute; top: 50%; left: 50%; translate: -50% -50%; width: min(22vw, 300px); aspect-ratio: 3/4; padding: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--night); color: var(--frost); text-align: left; transition: transform 1s var(--ease), opacity 1s var(--ease); }
+.ownership-card { position: absolute; top: 50%; left: 50%; translate: -50% -50%; width: min(22vw, 300px); aspect-ratio: 3/4; padding: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--night); color: var(--frost); text-align: left; transition: transform .25s var(--ease), opacity .25s var(--ease); }
 .ownership-card-label { position: absolute; bottom: 18px; left: 18px; right: 18px; color: #eef2f6; text-shadow: 0 1px 6px #000; }
 .ownership-swipe { position: absolute; right: var(--pad); bottom: 40px; color: var(--mist); }
 
